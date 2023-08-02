@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Js Practise</title>
+</head>
+
+<body>
+   <h1>Welcome to Js Welcome</h1>
+   <!-- <script src="try.js"></script> -->
+   <!--  <div>
+     <input type="text" id="input" placeholder="convert this" >
+   </div>
+
+   <div>
+      <button type="submit" onclick="ppt()">Submit</button>
+   </div>
+
+   <div id=result>
+
+   </div>
+
+   <script>
+      function ppt() {
+      let input =document.getElementById('input').value
+      let inchVal = input/100
+      let result = document.getElementById("result")
+      result.innerHTML =inchVal
+      }
+   </script>  -->
+   <!-- String & Methods
+  <script>
+     let str="Hello Pras How are you "
+     let str1="Hello Prash Howw Aree Youu"
+   </script> -->
+   <!-- Template Literals
+   <script>
+    let itemCount = "Hello"
+    let total = "Pras"
+
+    console.log(`This ${itemCount}  ${total}`)
+   </script>  -->
+   <!--  Array and Methods
+ <script>
+    let arr= [5,8,10,7,9,11]
+
+    let rrs= [1,2,3]
+    let rrs1=[4,5,6]
+ </script> -->
+   <section>
+      <div>
+         <input type="text" id="input" placeholder="Enter the amount" />
+      </div>
+      <button type="submit" onclick="Ebconvert()">Calculate</button>
+   </section>
+   <footer>
+      <div id="result">
+
+      </div>
+   </footer>
+   <script>
+
+      function Ebconvert() {
+         let bill = document.getElementById("input").value;
+         let rate = 0;
+
+         if (bill < 50)
+            rate = 1
+         else if (bill >= 100 && bill <= 150)
+             rate =2
+         else if (bill >= 151 && bill <= 200)
+             rate =3
+         else (bill > 205)
+            rate =5
+          
+         
+            let result = document.querySelector('#result')
+        result.innerHTML = "Your EB rate is " + rate  + " Rupees"
+      }
+   </script>
+</body>
+</html>
